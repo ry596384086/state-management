@@ -1,5 +1,5 @@
 # state-management
-前言：最近在学习华为项目的代码，看到华为项目的状态管理没有采用现有的开源库，如redux、mobx等，也没有使用传统的useContext，而是用useState + useEffect写了一个发布订阅者模式进行状态管理，这一点对我来说感觉比较新奇，以前从没接触过这种写法，于是决定研究一下目前比较常用的状态管理方式。<br />ps：这里谈到的状态管理是指全局状态管理，局部的使用useState即可<br />​<br />
+前言：最近接触到一种新的（对我个人而言）状态管理方式，它没有采用现有的开源库，如redux、mobx等，也没有使用传统的useContext，而是用useState + useEffect写了一个发布订阅者模式进行状态管理，这一点对我来说感觉比较新奇，以前从没接触过这种写法，于是决定研究一下目前比较常用的状态管理方式。<br />ps：这里谈到的状态管理是指全局状态管理，局部的使用useState即可<br />​<br />
 <a name="oMOX8"></a>
 # 状态管理方式
 目前比较常用的状态管理方式有hooks、redux、mobx三种，下面我将详细介绍一下这三类的使用方法以及分析各自的优缺点，以供各位进行参考。<br />git仓库: [https://github.com/ry596384086/state-management](https://github.com/ry596384086/state-management)
